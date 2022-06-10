@@ -3,7 +3,10 @@ var app = express();
 const data =require('./Data.js')
 
 app.get('/', function (req, res) {
-    res.json()
+    res.json({
+    
+    massage:'api is running'
+    })
 })
 
 app.get('/country/:country' , async function (req,res){
